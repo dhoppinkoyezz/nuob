@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>SHOUTcast HTML5 Radio Player</title>
+        <meta name="description" content="SHOUTcast">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> <!--320-->
+
+        <link id="favicon" rel="shortcut icon" type="image/png" href="https://cdn1.radiobintangtenggara.com/images/favicon.png">
+        <link rel="apple-touch-icon" href="https://cdn1.radiobintangtenggara.com/images/iOS-76x76.png">
+        <link rel="android-touch-icon" href="https://cdn1.radiobintangtenggara.com/images/iOS-76x76.png">
+        
+        
+        <link href="SHOUTcast%20HTML5%20Radio%20Player_files/jquery.css" rel="stylesheet" type="text/css">
+        <link href="SHOUTcast%20HTML5%20Radio%20Player_files/css.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="cont"></div>
+
+    <script src="SHOUTcast%20HTML5%20Radio%20Player_files/jquery_002.js"></script>      
+    <script src="SHOUTcast%20HTML5%20Radio%20Player_files/jquery.js"></script>
+    <script>
+        // This script will call Kast player
+        // please add your options (host, port, version, etc..)
+        // read the docs for more available options
+        $.kast({
+        host: '\x31\x30\x38\x2e\x36\x31\x2e\x33\x34\x2e\x35\x30',
+        port: 7662,
+        protocol: 'http',
+        version: 2, // SHOUTcast Version @integer
+        sid: 1, // Server stream ID (If you have multiple SHOUTcast V2 stations) @integer
+        statsPath: 'stats', // Path to stats @string
+        autoUpdate: true, // Autoupdate (Boolean or string: 'all') (current info / Played info / album artwork) @boolean @string
+        autoPlay: true, // Autoplay radio on load @boolean
+        betaProxies: true, // Use Beta Proxies to fetch SHOUTcast metadata
+        mobileCare: false, // low (aka true), medium, high, very high, ultra @boolean @array
+        statusBar: false,
+        minimizeMaximize: false,
+        startTemplate: 'maximized',
+        irrelevantWords: ["false"],
+        defaultArtwork: ['https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/e9/38/24/e938243e-d983-db13-803e-f165e3a2057f/source/512x512bb.jpg'],
+        language: {
+            offlineText: 'Temporarily Offline', // On offline: status bar text @string
+            playedText: '<font face="Georgia" color="blue">Wes Mari Diputer :</font>', // Played title (player bottom) @string
+            unknownTrackText: 'Unknown Track - c^o^d^e^l^i^s^t^.^c^c', // Set unknown track text when error
+            unknownArtistText: 'Unknown Artist' // Set unknown artist text when error
+        }, // Set text (Multi language support) @object
+        position: 'left', // Player position (Bottom right or left) @string
+        container: 'body', // Player container element, class or ID. everything other than 'body' isn't fixed @string
+        overHTTPS: true,
+        colors: 'dynamic',
+        ui: 'colored', // Transparent or colored and kast-nowplaying @string
+        theme: 'light', // Dark, light or dynamic: based on the current album artwork @string
+        played: false
+    })
+    </script><div id="kast" class="kast-recss kast-light kast-colored   kast-colors-dynamic kast-maximized kast-left  kast-not-full-statusbar kast-current    " data-interval="3" data-current="Syahiba - Ngomong Apik Apik (Official Music Video)"><div id="kast-wrapper"><div id="kast-top" style="background-image: url(&quot;https://lastfm-img2.akamaized.net/i/u/300x300/965b3f2a018e89f493cbad0518591f5f.png&quot;);"><div class="kast-album-wrapper"><i class="kast-mdi kast-mdi-album"></i></div><div id="kast-top-content" class="kast-top-content kast-primary-light" style="background-color: rgb(43, 44, 41);"><div id="kast-nowplaying"><p id="kast-np-title">Ngomong Apik Apik (Official Music Video)</p><p id="kast-np-artist">Syahiba</p></div><div id="kast-linear"></div></div><div id="kast-play" class="kast-playing kast-accent-dark kast-continuous" style="background-color: rgb(152, 138, 122);"><i class="kast-mdi kast-mdi-play"></i><i class="kast-mdi kast-mdi-pause"></i><i class="kast-mdi kast-mdi-stop"></i></div></div></div></div>    
+    
+
+</body></html>
